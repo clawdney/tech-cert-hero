@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tech Cert Hero - Free Practice Exams</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      min-height: 100vh;
+      color: #fff;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+    header { text-align: center; margin-bottom: 60px; }
+    h1 { font-size: 3.5rem; margin-bottom: 10px; background: linear-gradient(90deg, #00d4ff, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .tagline { font-size: 1.3rem; color: #a0a0b0; }
+    
+    .providers { display: grid; gap: 30px; }
+    .provider {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .provider h2 { font-size: 1.8rem; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+    .provider-icon { font-size: 2rem; }
+    
+    .exams { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .exam-card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+    .exam-card:hover {
+      transform: translateY(-4px);
+      border-color: #00d4ff;
+      background: rgba(255,255,255,0.12);
+    }
+    .exam-card.coming-soon { opacity: 0.5; pointer-events: none; }
+    .exam-name { font-size: 1.2rem; font-weight: 600; margin-bottom: 8px; }
+    .exam-desc { font-size: 0.9rem; color: #a0a0b0; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .badge-free { background: #10b981; }
+    .badge-soon { background: #f59e0b; }
+    
+    footer { text-align: center; margin-top: 60px; color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🦸 Tech Cert Hero</h1>
+      <p class="tagline">Free practice exams for cloud & Kubernetes certifications</p>
+    </header>
+    
+    <div class="providers">
+      <!-- Linux Foundation -->
+      <div class="provider">
+        <h2><span class="provider-icon">🐧</span> Linux Foundation</h2>
+        <div class="exams">
+          <a href="linux-foundation/prometheus/pca/" class="exam-card">
+            <div class="exam-name">Prometheus (PCA)</div>
+            <div class="exam-desc">Prometheus Certified Associate practice exam</div>
+            <span class="badge badge-free">FREE</span>
+          </a>
+          <div class="exam-card coming-soon">
+            <div class="exam-name">PromQL</div>
+            <div class="exam-desc">PromQL certification practice</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Kubernetes -->
+      <div class="provider">
+        <h2><span class="provider-icon">☸️</span> Kubernetes</h2>
+        <div class="exams">
+          <div class="exam-card coming-soon">
+            <div class="exam-name">KCNA</div>
+            <div class="exam-desc">Kubernetes and Cloud Native Associate</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="exam-card coming-soon">
+            <div class="exam-name">CKA</div>
+            <div class="exam-desc">Certified Kubernetes Administrator</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="exam-card coming-soon">
+            <div class="exam-name">CKAD</div>
+            <div class="exam-desc">Certified Kubernetes Application Developer</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- AWS -->
+      <div class="provider">
+        <h2><span class="provider-icon">☁️</span> AWS</h2>
+        <div class="exams">
+          <div class="exam-card coming-soon">
+            <div class="exam-name">AWS Cloud Practitioner</div>
+            <div class="exam-desc">AWS Cloud Practitioner certification</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="exam-card coming-soon">
+            <div class="exam-name">AWS Solutions Architect</div>
+            <div class="exam-desc">Associate level certification</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="exam-card coming-soon">
+            <div class="exam-name">AWS Developer</div>
+            <div class="exam-desc">Associate level certification</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Google Cloud -->
+      <div class="provider">
+        <h2><span class="provider-icon">🌐</span> Google Cloud</h2>
+        <div class="exams">
+          <div class="exam-card coming-soon">
+            <div class="exam-name">Cloud Digital Leader</div>
+            <div class="exam-desc">Google Cloud fundamentals</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="exam-card coming-soon">
+            <div class="exam-name">Professional Cloud Architect</div>
+            <div class="exam-desc">Google Cloud certification</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Microsoft Azure -->
+      <div class="provider">
+        <h2><span class="provider-icon">🪟</span> Microsoft Azure</h2>
+        <div class="exams">
+          <div class="exam-card coming-soon">
+            <div class="exam-name">Azure Fundamentals (AZ-900)</div>
+            <div class="exam-desc">Azure foundational certification</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="exam-card coming-soon">
+            <div class="exam-name">Azure Administrator (AZ-104)</div>
+            <div class="exam-desc">Azure administrator certification</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+          <div class="exam-card coming-soon">
+            <div class="exam-name">Azure Developer (AZ-204)</div>
+            <div class="exam-desc">Azure developer certification</div>
+            <span class="badge badge-soon">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>🦸 Tech Cert Hero - Built with ❤️ for the community</p>
+    </footer>
+  </div>
+</body>
+</html>
