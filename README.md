@@ -1,5 +1,7 @@
 # Tech Cert Hero 🦸
 
+**Unlock your career, not your wallet**
+
 Free practice exams for cloud and Kubernetes certifications.
 
 ## Available Exams
